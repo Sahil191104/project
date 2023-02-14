@@ -18,10 +18,10 @@ a {
     list-style-type: none;
 }
 
-img {
-    display: block;
-    width: 100%;
-}
+/* img { */
+    /* display: block; */
+    /* width: 100%; */
+/* } */
 
 .container {
     width: 137rem;
