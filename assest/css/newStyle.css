@@ -18,12 +18,12 @@ a {
     text-decoration: none;
 }
 
-/* img { */
-/* display: block; */
-/* width: 100%; */
-/* } */
+img {
+    display: block;
+    width: 100%;
+}
 
-.container {
+.container, .hero-data {
     width: 137rem;
     margin: 0 auto;
 }
@@ -84,7 +84,7 @@ a {
 /* -----Header------ */
 
 header {
-    padding-top: .1rem;
+    padding-top: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -136,11 +136,11 @@ header .serch {
 
     nav>ul {
         position: absolute;
-        width: 60%;
+        width: 70%;
         height: 100vh;
         background-color: burlywood;
         top: 0;
-        right: 0;
+        right: -70%;
         transition: all 1s;
     }
 
@@ -167,7 +167,7 @@ header .serch {
     }
 
     .showHide {
-        right: -70%;
+        right: 0;
     }
 }
 
@@ -181,6 +181,7 @@ header .serch {
     height: 100vh;
     background-position: center center;
     background-size: cover;
+    margin: 0 auto;
 }
 
 .hero-data {
@@ -188,11 +189,63 @@ header .serch {
 }
 
 .hero-data h1 {
-    font-size: 9rem;
-    position: absolute;
-    font-style: normal;
+    padding-top: 254.46px;
     font-weight: 700;
+    font-size: 90px;
+    line-height: 110px;
     color: #fff;
+}
+
+.hero-data p {
+    padding-top: 37.59px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    color: #CFCFCF;
+}
+
+.explore {
+    width: 137rem;
+    width: 736px;
+    height: 78.07px;
+    padding: 11px 0px;
+    align-content: center;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+.explore select {
+    margin: 15px 32px;
+    font-size: 18px;
+    color: #9B9B9B;
+    font-weight: 600;
+    font-family: 'Poppins';
+    border: transparent;
+}
+
+.explore input {
+    margin-left: 140px;
+    font-size: 18px;
+    background-color: black;
+    border: transparent;
+    color: #fff;
+    border-radius: 40px;
+    padding: 18px;
+}
+
+#hero > p {
+    padding-left: 265px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ECECEC;
+}
+
+#hero span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /* ---------------------- */
