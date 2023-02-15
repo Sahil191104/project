@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    list-style-type: none;
+    text-decoration: none;
 }
 
 /* img { */
@@ -80,19 +80,29 @@ a {
 .col-12 {
     width: 100%;
 }
- 
+
 /* -----Header------ */
 
+header {
+    padding-top: .1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 header .container {
-    list-style: none;
     display: flex;
-    background-color: gray;
     justify-content: space-between;
     align-items: center;
 }
 
 header nav {
     margin-left: auto;
+}
+
+header nav ul {
+    list-style-type: none;
 }
 
 header nav ul li {
@@ -113,13 +123,18 @@ header .serch {
     padding-left: 3.3rem;
 }
 
-.container nav > i , #menu i {
+.container nav>i,
+#menu i {
     display: none;
 }
 
-@media screen and (max-width:768px){
-    
-    nav > ul {
+.dark-header {
+    background-color: black;
+}
+
+@media screen and (max-width:768px) {
+
+    nav>ul {
         position: absolute;
         width: 60%;
         height: 100vh;
@@ -137,7 +152,7 @@ header .serch {
         display: block;
     }
 
-    nav ul > li {
+    nav ul>li {
         padding: 1rem;
         font-size: 2rem;
         float: right;
@@ -146,7 +161,7 @@ header .serch {
         display: inline-block !important;
     }
 
-    nav > li {
+    nav>li {
         font-size: 2rem;
         display: inline-block !important;
     }
@@ -157,3 +172,27 @@ header .serch {
 }
 
 /* -----Headre----- */
+
+/* -----hero-Section----- */
+
+#hero {
+    background: url(../images/summer-landscape-background-zoom/4091164.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-data {
+    font-family: 'Poppins';
+}
+
+.hero-data h1 {
+    font-size: 9rem;
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ---------------------- */
