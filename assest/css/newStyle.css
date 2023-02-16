@@ -85,7 +85,6 @@ img {
 /* -----Header------ */
 
 header {
-    padding-top: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -125,8 +124,8 @@ header .serch {
     padding-left: 3.3rem;
 }
 
-.container nav>i,
-#menu i {
+.container nav > i,
+#menu > i {
     display: none;
 }
 
@@ -138,15 +137,15 @@ header .serch {
 
     nav>ul {
         position: absolute;
-        width: 70%;
-        height: 100vh;
-        background-color: burlywood;
         top: 0;
         right: -70%;
+        background-color: blueviolet;
+        width: 70%;
+        height: 100vh;
         transition: all 1s;
     }
 
-    header .serch i {
+    .container  .serch > i {
         display: none;
     }
 
