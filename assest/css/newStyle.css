@@ -84,6 +84,56 @@ img {
 
 /* -----Header------ */
 
+/* header nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    transition: all 1s;
+}
+
+header nav ul li a:hover {
+    background-color: black;
+    color: #FFF;
+    transition: all 1.3s;
+}
+
+header nav ul li ul {
+    display: inline-block;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background-color: gray;
+    display: none;
+    width: 135px;
+}
+
+header nav ul li ul li {
+    width: 100%;
+}
+
+header nav ul li ul li a {
+    width: 100%;
+}
+
+header nav ul li:hover>ul {
+    display: inline-block;
+}
+
+header nav ul li ul li ul {
+    top: 0;
+    display: none;
+    left: 135px;
+    position: absolute;
+}
+
+nav>i, nav ul>i {
+    display: none !important;
+}
+
+header nav ul li:hover > a i {
+    transform: rotate(90deg);
+} */
+
 header {
     padding-top: 1rem;
     position: fixed;
@@ -279,6 +329,7 @@ header .serch {
     line-height: 36px;
     text-align: center;
     color: #878787;
+    margin-bottom: -18px;
 }
 
 .explore-slider .explore-img {
@@ -286,7 +337,7 @@ header .serch {
 }
 
 .explore-slider .swiper-wrapper {
-    padding: 2rem 1rem;
+    padding: 12rem 1rem;
 }
 
 .explore-slider .swiper-slide {
@@ -310,7 +361,7 @@ header .serch {
 .explore-data .explore-circle {
     width: 8rem;
     position: absolute;
-    top:-2rem;
+    top: -2rem;
     right: 2rem;
     height: 8rem;
     background-color: white;
@@ -341,6 +392,42 @@ header .serch {
     font-size: 14px;
     line-height: 21px;
     color: #555555;
+}
+
+.explore-slider .prev,
+.explore-slider .next {
+    position: absolute;
+    top: 0;
+    padding: 6px 22px;
+    text-align: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    filter: drop-shadow(0px 8px 50px rgba(0, 0, 0, 0.1));
+    font-size: 35px;
+    /* height: 66.1119384765625px;
+    width: 69px; */
+    background-color: #fff;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.explore-slider .prev {
+    left: 10px;
+}
+
+.explore-slider .next {
+    right: 0px;
+}
+
+.explore-slider .fa-chevron-left:before {
+    color: #737373;
+    content: "\f054";
+}
+
+.explore-slider .fa-chevron-right:before {
+    color: #737373;
+    content: "\f053";
 }
 
 /* ******************************** */
