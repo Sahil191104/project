@@ -86,7 +86,6 @@ img {
 
 header {
     z-index: 9;
-    padding-top: 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -109,19 +108,18 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    /* padding: 3.3rem; */
 }
 
 header nav ul li a {
     color: #fff;
     font-weight: 600;
     font-size: 15px;
-    /* padding-left: 1.5em; */
 }
-header a {
+
+header nav a {
     text-decoration: none;
     display: inline-block;
-    padding: 20px 30px;
+    padding: 20px 35px;
     color: black;
 }
 
@@ -172,7 +170,7 @@ nav ul>i {
     display: none !important;
 }
 
-header nav ul li:hover > a i {
+header nav ul li:hover>a i {
     transform: rotate(90deg);
     transition: all 0.8s;
 }
@@ -184,7 +182,7 @@ header .serch {
 }
 
 .container nav>i,
-#menu > i {
+#menu>i {
     display: none;
 }
 
@@ -345,31 +343,45 @@ header .serch {
 }
 
 .explore-slider .swiper-wrapper {
-    padding: 12rem 1rem;
+    padding: 8rem 1rem;
 }
 
-.explore-slider .swiper-slide {
+.explore-slider .swiper-slide:hover {
     box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 0 0 1rem 1rem;
+    transition: all 0.5s;
+    transform: translateY(-1rem);
 }
 
 .explore-slider .explore-img img {
     height: 100%;
     width: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem;
     object-fit: cover;
     object-position: center center;
 }
 
 .swiper-slide .explore-data {
-    padding: 35px 19px 27px 14px;
+    padding: 0rem 1.9rem 2.7rem 1.4rem;
     position: relative;
+    opacity: 0;
+}
+
+.swiper-slide:hover .explore-data {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.explore-slider .swiper-slide:hover .explore-img img {
+    border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+    height: 31.6rem;
 }
 
 .explore-data .explore-circle {
     width: 8rem;
     position: absolute;
-    top: -2rem;
+    top: -6rem;
     right: 2rem;
     height: 8rem;
     background-color: white;
@@ -402,7 +414,7 @@ header .serch {
     color: #555555;
 }
 
-.explore-slider .prev,
+/* .explore-slider .prev,
 .explore-slider .next {
     position: absolute;
     top: 0;
@@ -413,8 +425,6 @@ header .serch {
     transform: matrix(-1, 0, 0, 1, 0, 0);
     filter: drop-shadow(0px 8px 50px rgba(0, 0, 0, 0.1));
     font-size: 35px;
-    /* height: 66.1119384765625px;
-    width: 69px; */
     background-color: #fff;
     z-index: 9;
     cursor: pointer;
@@ -436,6 +446,28 @@ header .serch {
 .explore-slider .fa-chevron-right:before {
     color: #737373;
     content: "\f053";
+} */
+
+.swiper-slide-section {
+    position: relative;
+}
+
+.swiper-slide-section .swiper-button-prev,
+.swiper-slide-section .swiper-button-next {
+    position: absolute;
+    top: 0;
+    width: 7rem;
+    height: 6rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 9;
+    box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide-section .swiper-button-next::after,
+.swiper-slide-section .swiper-button-prev::after {
+    font-size: 2rem;
+    color: #737373;
 }
 
 /* ******************************** */
