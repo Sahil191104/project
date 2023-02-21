@@ -191,9 +191,79 @@
                         </div> -->
                     </div>
                 </div>
+        </section>
 
+        <section id="why">
+            <div class="container">
+                <div class="why-container">
+                    <h2>Why choose Us?</h2>
+                    <p>our services have been trusted by world travelers.</p>
+                </div>
+                <div class="swiper why-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="why-image">
+                                <img src="./assest/images/Group 31.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Best Service</h4>
+                                <p>our service is reliable and convenient, our service is quality.</p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-image">
+                                <img src="./assest/images/Group 31 (2).png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Price Guarantee</h4>
+                                <p>our service is reliable and convenient, our service is quality.</p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-image">
+                                <img src="./assest/images/Group 31 (1).png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Handpicked Hotels</h4>
+                                <p>our service is reliable and convenient, our service is quality.</p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-image">
+                                <img src="./assest/images/Group 31.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <p>our service is reliable and convenient, our service is quality.</p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-image">
+                                <img src="./assest/images/Group 31 (2).png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <p>our service is reliable and convenient, our service is quality.</p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-image">
+                                <img src="./assest/images/Group 31 (1).png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <p>our service is reliable and convenient, our service is quality.</p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
@@ -209,6 +279,31 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        var swiper1 = new Swiper(".why-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
             breakpoints: {
                 640: {
