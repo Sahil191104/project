@@ -131,7 +131,7 @@ header nav ul li {
 }
 
 header nav ul li a:hover {
-    background-color: rgb(158, 195, 181);
+    background-color: rgb(130, 181, 162);
     color: #FFF;
     transition: all 1.3s;
 }
@@ -141,7 +141,7 @@ header nav ul li ul {
     position: absolute;
     top: 8.35rem;
     left: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
     width: 155px;
 }
@@ -452,8 +452,8 @@ header .serch {
     position: relative;
 }
 
-.swiper-slide-section .swiper-button-prev,
-.swiper-slide-section .swiper-button-next {
+#Explore .swiper-button-prev,
+#Explore .swiper-button-next {
     position: absolute;
     top: 0;
     width: 6.6rem;
@@ -464,8 +464,8 @@ header .serch {
     box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
-.swiper-slide-section .swiper-button-next::after,
-.swiper-slide-section .swiper-button-prev::after {
+#Explore .swiper-button-next::after,
+#Explore .swiper-button-prev::after {
     font-size: 2rem;
     color: #737373;
 }
@@ -515,12 +515,12 @@ header .serch {
     background-color: #fff;
     box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    padding: 45px 0 0 19px;
+    padding: 4.5rem 2rem 0 1.9rem;
 }
 
 .swiper-slide .why-image {
-    height: 97px;
-    width: 95.57px;
+    height: 9.7rem;
+    width: 9.5rem;
 }
 
 .why-data h4 {
@@ -536,7 +536,7 @@ header .serch {
     font-size: 18px;
     line-height: 27px;
     color: #858585;
-    padding: 10px 125px 39px 0;
+    padding: 10px 0px 39px 0;
 }
 
 .why-data a {
@@ -544,6 +544,40 @@ header .serch {
     font-size: 18px;
     line-height: 27px;
     color: #000000;
+}
+
+#why .swiper-slide-sections {
+    position: relative;
+}
+
+#why .swiper-slide-sections .swiper-button-prev1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6.6rem;
+    height: 6.9rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 9;
+    box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+#why .swiper-slide-sections .swiper-button-next1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6.6rem;
+    height: 6.9rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 9;
+    box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+#why .swiper-slide-sections .swiper-button-next1::after,
+#why .swiper-slide-sections .swiper-button-prev1::after {
+    font-size: 2rem;
+    color: #000;
 }
 
 /* ******************************** */
