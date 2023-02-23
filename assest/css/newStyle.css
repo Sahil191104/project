@@ -504,7 +504,7 @@ header .serch {
     margin-bottom: 1.7rem;
 }
 
-.why-slider{
+.why-slider {
     width: 115rem;
 }
 
@@ -559,6 +559,8 @@ header .serch {
     background-color: #fff;
     border-radius: 1rem;
     z-index: 9;
+    text-align: center;
+    padding-top: 2.5rem;
     box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -571,13 +573,109 @@ header .serch {
     background-color: #fff;
     border-radius: 1rem;
     z-index: 9;
+    text-align: center;
+    padding-top: 2.5rem;
     box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 #why .swiper-slide-sections .swiper-button-next1::after,
 #why .swiper-slide-sections .swiper-button-prev1::after {
     font-size: 2rem;
-    color: #000;
+    color: #737373;
+}
+
+.swiper-slide-sections .swiper-button-prev1::after {
+    content: 'prev';
+    font-family: swiper-icons;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-slide-sections .swiper-button-next1::after {
+    content: 'next';
+    font-family: swiper-icons;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+/* ******************************** */
+
+/* ********OurTor-section********** */
+
+#ourtor .container {
+    width: 113.8rem;
+}
+
+#ourtor {
+    margin-top: 18rem;
+}
+
+.our-data h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: #020202;
+}
+
+.our-data p {
+    margin-top: 2.9rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #878787;
+    margin-bottom: -18px;
+}
+
+.our-logo {
+    padding-top: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.our-logo img {
+    width: 14rem;
+}
+
+/* ******************************** */
+
+/* ********cilentsay-section******* */
+
+#cilentsay {
+    margin-top: 17.9rem;
+}
+
+.container5 {
+    width: 172.6rem;
+    margin-left: 6.9rem;
+}
+
+.cilent-data h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 70px;
+    letter-spacing: 0.14em;
+    color: #626262;
+}
+
+.cilent-data h2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    color: #020202;
+}
+
+.cilent-data p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: #626262;
 }
 
 /* ******************************** */
