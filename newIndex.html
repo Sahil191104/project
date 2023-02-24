@@ -288,14 +288,26 @@
             </div>
         </section>
         <!-- 5 -->
-        <section id="cilentsay">
-            <div class="container5">
-                <div class="cilent-data">
+        <section id="clientsay">
+            <div class="clinet-container">
+                <div class="client-data">
                     <h3>TESTIMONIAL</h3>
                     <h2>What our client say</h2>
                     <p>Create a visual identity for your company and a<br>overall brand</p>
                 </div>
-            </div>
+                <div class="swiper clinte-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="clinte-image">
+                                <img src="./assest/images/Mask Group.png" alt="">
+                            </div>
+                            <div class="data-clinte">
+                                <h4>Sara Jay</h4>
+                                <p>Treveller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
 
@@ -356,6 +368,35 @@
                 1024: {
                     slidesPerView: 3,
                     spaceBetween: 87,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        var swiper2 = new Swiper(".clinte-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 43,
                 },
             },
         });
