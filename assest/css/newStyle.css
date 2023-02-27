@@ -470,7 +470,8 @@ header .serch {
 }
 
 .why-slider {
-    width: 115rem;
+    margin-left: 11rem;
+    margin-right: 11rem;
 }
 
 .why-slider .swiper-slide {
@@ -619,7 +620,6 @@ header .serch {
 }
 
 .clinet-container {
-    width: 137rem;
     margin-left: calc((100% - 137rem) / 2);
 }
 
@@ -763,7 +763,7 @@ header .serch {
 
 #Subcribe {
     margin-top: 18rem;
-    background: url(../images/pexels-maxim-titov-3848886.jpg);
+    background: url(../images/green-purple.jpg);
     position: relative;
     background-size: 100% 54.2rem;
     background-repeat: no-repeat;
@@ -802,7 +802,7 @@ header .serch {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    padding: 1rem 1rem 1rem 2.2rem;
+    padding: 1rem 0.7rem 1rem 2.2rem;
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
 }
 
@@ -824,7 +824,104 @@ header .serch {
     height: 55px;
     background: #000000;
     border-radius: 27.5px;
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* ******************************** */
+
+/* ********footer-section********** */
+
+.footer-slider {
+    justify-content: space-between;
+    display: flex;
+    padding: 80px 0px 0px 0px
+}
+
+.logo-image {
+    height: 138px;
+    width: 438px;
+}
+
+.logo-image img {
+    height: 84.38px;
+    width: 383.38px;
+}
+
+.logo-image>p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #6C6C6C;
+}
+
+.contact h3,
+.link h3 ,
+.Follow h3 {
+    width: 250px;
+    padding-bottom: 21px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.contact ul,
+.link ul {
+    list-style-type: none;
+}
+
+.contact ul li,
+.link ul li {
+    padding-bottom: 19px;
+}
+
+.contact a,
+.link a {
+    text-decoration: none;
+    color: #6C6C6C;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact i {
+    color: #000;
+}
+
+.link {
+    width: 138px;
+    height: 341px;
+}
+
+.Follow {
+    width: 129px;
+    height: 341px;
+}
+
+.Follow i {
+    padding-right: 15px;
+    color: #3D3D3D;
+    justify-content: center;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.end {
+    background: black;
+    margin: 0 auto;
+}
+
+.end h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 95px;
 }
 
 /* ******************************** */
