@@ -182,7 +182,7 @@ header .serch {
 }
 
 .container nav>i,
-#menu>i {
+#menu > i {
     display: none;
 }
 
@@ -401,6 +401,7 @@ header .serch {
 /* ************Why-section********* */
 
 #why {
+    margin-top: 11.8rem;
     background: url(../images/mesmerizing-view-sunset-sea-stones.jpg);
     position: relative;
     background-size: 100% 50rem;
@@ -537,7 +538,7 @@ header .serch {
 } */
 
 #ourtor {
-    margin-top: 16rem;
+    margin-top: 12rem;
 }
 
 .our-data h1 {
@@ -610,6 +611,8 @@ header .serch {
 
 .clinte-slider .swiper-slide {
     margin-bottom: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 .swiper-slide .main-clinte-slide {
@@ -721,7 +724,7 @@ header .serch {
 /* ********Subcribe-section******** */
 
 #Subcribe {
-    margin-top: 18rem;
+    margin-top: 14rem;
     background: url(../images/green-purple.jpg);
     position: relative;
     background-size: 100% 54.2rem;
@@ -893,15 +896,15 @@ header .serch {
 
 /* 1366-1440 (laptop) */
 @media screen and (max-width: 1440px) {
+    .container {
+        max-width: 137rem;
+    }
     .hero-data h1 {
         font-size: 80px;
         line-height: 100px;
     }
     .hero-data {
         top: 40%;
-    }
-    .container {
-        max-width: 137rem;
     }
     #hero .explore-form {
         height: 70px;
@@ -926,31 +929,28 @@ header .serch {
     #why {
         margin-top: 11.7rem;
     }
-    .why-container h2 {
-        font-size: 55px;
-    }
     #ourtor {
         margin-top: 10rem;
-    }
-    .clinet-container {
-        margin-left: calc((100% - 137rem) / 2);
     }
     .Subcribe-container h2 {
         line-height: 60px;
     }
+    .clinet-container {
+        margin-left: calc((100% - 133rem) / 2);
+    }
 }
 
 /* 1200-1365 (big tablet) */
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1365px) {
+    .container {
+        max-width: 95%;
+    }
     .hero-data h1 {
         font-size: 70px;
         line-height: 90px;
     }
     .hero-data {
         top: 35%;
-    }
-    .container {
-        max-width: 95%;
     }
     header nav a {
         padding: 23px 23px;
@@ -982,4 +982,45 @@ header .serch {
     .client-data h2 {
         font-size: 50px;
     }
+    .clinet-container {
+        margin-left: calc((100% - 110rem) / 2);
+    }
+}
+
+/* 992-1199 (big tablet) */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 95%;
+    }
+    .hero-data h1 {
+        font-size: 60px;
+        line-height: 77px;
+    }
+    .hero-data {
+        top: 32%;
+    }
+    .logo img {
+        width: 18rem;
+        height: 3.8rem;
+    }
+}
+
+/* 768-991 (small tablet) */
+@media screen and (max-width: 991px) {
+
+}
+
+/* 575-767 (Mobile landscape) */
+@media screen and (max-width: 767px) {
+    
+}
+
+/* 480-574 (Mobile) */
+@media screen and (max-width: 574px) {
+    
+}
+
+/* 0-320-479 (small-mobile) */
+@media screen and (max-width: 479px) {
+    
 }
