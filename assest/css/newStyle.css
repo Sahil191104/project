@@ -23,10 +23,10 @@ a {
     width: 100%;
 } */
 
-.container,
-.hero-data {
-    max-width: 137rem;
+.container {
+    max-width: 141rem;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .row {
@@ -401,7 +401,6 @@ header .serch {
 /* ************Why-section********* */
 
 #why {
-    margin-top: 17.7rem;
     background: url(../images/mesmerizing-view-sunset-sea-stones.jpg);
     position: relative;
     background-size: 100% 50rem;
@@ -429,12 +428,11 @@ header .serch {
     margin-bottom: 1.7rem;
 }
 
-.why-slider {
-    margin-left: 11rem;
-    margin-right: 11rem;
+.main-why-slider {
+    margin: 0 60px 0 60px;
 }
 
-.why-slider .swiper-slide {
+.why-slider .main-why-slider {
     height: 43.2rem;
     margin-top: 14rem;
     margin-bottom: 6rem;
@@ -444,7 +442,7 @@ header .serch {
     padding: 4.5rem 2rem 0 1.9rem;
 }
 
-.swiper-slide .why-image {
+.main-why-slider .why-image {
     height: 9.7rem;
     width: 9.5rem;
 }
@@ -534,9 +532,9 @@ header .serch {
 
 /* ********OurTor-section********** */
 
-#ourtor .container {
+/* #ourtor .container {
     width: 113.8rem;
-}
+} */
 
 #ourtor {
     margin-top: 16rem;
@@ -561,6 +559,7 @@ header .serch {
 }
 
 .our-logo {
+    padding: 0 60px;
     padding-top: 7rem;
     justify-content: space-between;
     align-items: center;
@@ -791,98 +790,104 @@ header .serch {
 
 /* ********footer-section********** */
 
-.footer-slider {
-    justify-content: space-between;
+#top{
+    margin: 8rem 0;
+}
+
+.buttom {
+    margin-top: 80px;
     display: flex;
-    padding: 80px 0px 0px 0px
+    justify-content: space-between;
 }
 
-.logo-image {
-    height: 138px;
-    width: 438px;
-}
-
-.logo-image img {
-    height: 84.38px;
-    width: 383.38px;
-}
-
-.logo-image>p {
+.traveller p {
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    color: #6C6C6C;
+    display: flex;
+    align-items: center;
+    color: #6C6C6C
 }
 
-.contact h3,
-.link h3,
-.Follow h3 {
-    width: 250px;
-    padding-bottom: 21px;
-    font-style: normal;
+
+.contact h4 {
     font-weight: 600;
     font-size: 24px;
+    line-height: 70px;
     display: flex;
     align-items: center;
     text-align: center;
     color: #000000;
 }
 
-.contact ul,
-.link ul {
-    list-style-type: none;
+.contact ul li {
+    list-style: none;
 }
 
-.contact ul li,
-.link ul li {
-    padding-bottom: 19px;
-}
-
-.contact a,
-.link a {
-    text-decoration: none;
+.contact ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
     color: #6C6C6C;
-    font-style: normal;
+    display: inline-block;
+}
+
+.contact ul li i {
+    padding-right:1rem;
+    font-size: 1.5rem;
+}
+
+.quick h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.quick ul li {
+    list-style: none;
+}
+
+
+.quick ul li a {
     font-weight: 500;
     font-size: 18px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #6C6C6C;
 }
 
-.contact i {
-    color: #000;
-    padding-right: 0.6rem;
+.follow h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    color: #000000;
 }
 
-.link {
-    width: 138px;
-    height: 341px;
+.follow i {
+    font-size: 2rem;
+    padding: 0 1rem 0 0;
 }
 
-.Follow {
-    width: 129px;
-    height: 341px;
-}
-
-.Follow i {
-    padding-right: 15px;
-    color: #3D3D3D;
-    justify-content: center;
-    text-decoration: none;
-    font-style: normal;
+.copyright p {
     font-weight: 500;
-    font-size: 15px;
-}
-
-.footer-bootm {
-    color: white;
-    background: black;
     font-size: 18px;
-    font-weight: 500;
+    line-height: 34px;
     text-align: center;
-    padding-top: 95px;
-    width: 100%;
+    color: #DFDFDF;
+    background-color: #000;
+    height: 8.9rem;
+    padding-top:5rem ;
 }
 
-.footer-bootm .bootm h3 {}
+/********/
 
 /* ******************************** */
 
@@ -896,7 +901,7 @@ header .serch {
         top: 40%;
     }
     .container {
-        width: 133rem;
+        max-width: 137rem;
     }
     #hero .explore-form {
         height: 70px;
@@ -906,8 +911,14 @@ header .serch {
         margin-top: 15.8rem;
     }
     .main-title h2,
-    .why-container h2 {
+    .why-container h2,
+    .our-data h1,
+    .Subcribe-container h2,
+    .client-data h2 {
         font-size: 55px;
+    }
+    .client-data h3 {
+        line-height: 53px;
     }
     .main-title p {
         margin-top: 2rem;
@@ -922,6 +933,53 @@ header .serch {
         margin-top: 10rem;
     }
     .clinet-container {
-        margin-left: calc((100% - 133rem) / 2);
+        margin-left: calc((100% - 137rem) / 2);
+    }
+    .Subcribe-container h2 {
+        line-height: 60px;
+    }
+}
+
+/* 1200-1365 (big tablet) */
+@media screen and (max-width: 1199px) {
+    .hero-data h1 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+    .hero-data {
+        top: 35%;
+    }
+    .container {
+        max-width: 95%;
+    }
+    header nav a {
+        padding: 23px 23px;
+    }
+    .hero-data p {
+        font-size: 15px;
+        line-height: 32px;
+        color: #CFCFCF;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    #hero .explore-form {
+        height: 65px;
+        width: 600px;
+        padding: 1rem 0.8rem 1rem 2.2rem;
+    }
+    #hero input {
+        height: 49.866943px;
+        width: 145px;
+        font-size: 15px;
+    }
+    #hero .explore-form select {
+        font-size: 15px;
+    }
+    .main-title h2,
+    .why-container h2,
+    .our-data h1,
+    .Subcribe-container h2,
+    .client-data h2 {
+        font-size: 50px;
     }
 }
