@@ -892,36 +892,61 @@ header .serch {
         font-size: 80px;
         line-height: 100px;
     }
+
     .hero-data {
         top: 40%;
     }
+
     .container {
         width: 133rem;
     }
+
     #hero .explore-form {
         height: 70px;
         width: 655px;
     }
+
     #Explore {
         margin-top: 15.8rem;
     }
+
     .main-title h2,
-    .why-container h2 {
+    .why-container h2,
+    .our-data h1,
+    .client-data h2 {
         font-size: 55px;
     }
+
     .main-title p {
         margin-top: 2rem;
     }
+
     #why {
         margin-top: 11.7rem;
     }
+
     .why-container h2 {
         font-size: 55px;
     }
+
     #ourtor {
         margin-top: 10rem;
     }
+
     .clinet-container {
         margin-left: calc((100% - 133rem) / 2);
     }
+    .client-data h3 {
+        font-size: 30px;
+        line-height: 58px;
+    }
+    .Subcribe-container h2 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+}
+
+/*  */
+@media screen and (max-width: 1200px) {
+    
 }
