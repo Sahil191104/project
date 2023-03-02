@@ -639,14 +639,14 @@ header .serch {
     color: #000000;
 }
 
-.data-clinte h5 {
+.data-clinte p {
     font-weight: 500;
     font-size: 18px;
     text-align: center;
     color: #858585;
 }
 
-.client-star h5 {
+.client-star p {
     padding: 1.8rem 8rem 0rem 5.3rem;
     padding-bottom: 5.1rem;
     font-weight: 500;
@@ -662,6 +662,7 @@ header .serch {
 #clientsay .clinte-swiper-slide-section {
     position: relative;
     float: right;
+    right: 3rem;
     bottom: 13.7rem;
 }
 
@@ -768,13 +769,17 @@ header .serch {
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
 }
 
+input::placeholder {
+    font-size: 20px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
 #Subcribe .types {
     font-weight: 500;
-    font-size: 20px;
     line-height: 34px;
     color: #9B9B9B;
     border: none;
-    padding: 0.5rem 1rem 1rem 1rem;
+    width: 20rem;
 }
 
 #Subcribe .Subcribe {
@@ -875,6 +880,7 @@ header .serch {
 }
 
 .follow i {
+    color: #000;
     font-size: 2rem;
     padding: 0 1rem 0 0;
 }
@@ -896,6 +902,49 @@ header .serch {
 
 /* 1366-1440 (laptop) */
 @media screen and (max-width: 1440px) {
+    .hero-data p,
+    #hero .explore-form select,
+    .hero-data p,
+    .main-title p,
+    .explore-data p,
+    .why-container p, 
+    .Subcribe-container p,
+    .why-data p,
+    .our-data p,
+    .client-data p,
+    .client-star p,
+    .data-clinte p,
+    .traveller p,
+    .contact ul li a,
+    .quick ul li a {
+        font-size: 16px;
+    }
+    #clientsay .clinte-swiper-slide-section {
+        right: 5.3rem;
+    }
+    .traveller1 img {
+        
+    }
+    .explore-data h4,
+    .why-data h4,
+    .data-clinte h4,
+    .contact h4,
+    .quick h4,
+    .follow h4 {
+        font-size: 26px;
+    }
+    .explore-data .explore-circle span {
+        font-size: 6.2rem;
+        line-height: 11rem;
+    }
+    .explore-data .explore-circle {
+        width: 7.2rem;
+        height: 7.2rem;
+    }
+    .main-why-slider .why-image img {
+        height: 8.7rem;
+        width: 8.5rem;
+    }
     .container {
         max-width: 137rem;
     }
@@ -923,14 +972,25 @@ header .serch {
     .client-data h3 {
         line-height: 53px;
     }
-    .main-title p {
+    .clinte-image img {
+        width: 13rem;
+    }
+    .main-title p ,
+    .hero-data p ,
+    .our-data p{
         margin-top: 2rem;
     }
+    #Subcribe {
+        margin-top: 12rem;
+    }
     #why {
-        margin-top: 11.7rem;
+        margin-top: 9rem;
     }
     #ourtor {
-        margin-top: 10rem;
+        margin-top:8rem;
+    }
+    .client-data p {
+        line-height: 3rem;
     }
     .Subcribe-container h2 {
         line-height: 60px;
