@@ -303,7 +303,7 @@ header .serch {
 }
 
 .explore-slider .swiper-wrapper {
-    padding: 8rem 1rem 4rem 1rem;
+    padding: 8rem 0rem 0rem 0rem;
 }
 
 .explore-slider .swiper-slide:hover {
@@ -378,10 +378,21 @@ header .serch {
     position: relative;
 }
 
-#Explore .swiper-button-prev,
+#Explore .swiper-button-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6.6rem;
+    height: 6.9rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 9;
+    box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
+}
 #Explore .swiper-button-next {
     position: absolute;
     top: 0;
+    right: 0;
     width: 6.6rem;
     height: 6.9rem;
     background-color: #fff;
@@ -443,10 +454,10 @@ header .serch {
     padding: 4.5rem 2rem 0 1.9rem;
 }
 
-.main-why-slider .why-image {
+/* .main-why-slider .why-image {
     height: 9.7rem;
     width: 9.5rem;
-}
+} */
 
 .why-data h4 {
     font-weight: 600;
@@ -828,7 +839,8 @@ input::placeholder {
     color: #000000;
 }
 
-.contact ul li {
+.contact ul li,
+.follow ul li {
     list-style: none;
 }
 
@@ -879,7 +891,8 @@ input::placeholder {
     color: #000000;
 }
 
-.follow i {
+.follow a {
+    text-decoration: none;
     color: #000;
     font-size: 2rem;
     padding: 0 1rem 0 0;
@@ -907,7 +920,7 @@ input::placeholder {
     .hero-data p,
     .main-title p,
     .explore-data p,
-    .why-container p, 
+    .why-container p,
     .Subcribe-container p,
     .why-data p,
     .our-data p,
@@ -916,14 +929,22 @@ input::placeholder {
     .data-clinte p,
     .traveller p,
     .contact ul li a,
-    .quick ul li a {
+    .quick ul li a,
+    .hero-data span {
         font-size: 16px;
+    }
+    header nav ul li a {
+        font-size: 15px;
     }
     #clientsay .clinte-swiper-slide-section {
         right: 5.3rem;
     }
+    #main-header .logo img {
+        width: 21rem;
+    }
     .traveller1 img {
-        
+        width: 34rem;
+        height: 8rem;
     }
     .explore-data h4,
     .why-data h4,
@@ -955,6 +976,9 @@ input::placeholder {
     .hero-data {
         top: 40%;
     }
+    .our-logo img {
+        width: 12rem;
+    }
     #hero .explore-form {
         height: 70px;
         width: 655px;
@@ -968,12 +992,13 @@ input::placeholder {
     .Subcribe-container h2,
     .client-data h2 {
         font-size: 55px;
+        line-height: 66px;
     }
     .client-data h3 {
         line-height: 53px;
     }
     .clinte-image img {
-        width: 13rem;
+        width: 12rem;
     }
     .main-title p ,
     .hero-data p ,
@@ -995,13 +1020,113 @@ input::placeholder {
     .Subcribe-container h2 {
         line-height: 60px;
     }
+    #clientsay {
+        margin-top: 15.9rem;
+    }
     .clinet-container {
         margin-left: calc((100% - 133rem) / 2);
+    }
+    input::placeholder {
+        font-size: 16px;
+    }
+    #Explore .swiper-button-next::after,
+    #Explore .swiper-button-prev::after,
+    #why .swiper-slide-sections .swiper-button-next1::after,
+    #why .swiper-slide-sections .swiper-button-prev1::after,
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2::after, 
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2::after {
+    font-size: 1.8rem;
+    }
+    #Explore .swiper-button-next,
+    #Explore .swiper-button-prev,
+    #why .swiper-slide-sections .swiper-button-prev1,
+    #why .swiper-slide-sections .swiper-button-next1,
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2,
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2 {
+        width: 6.1rem;
+        height: 6.2rem;
+    }
+    .swiper-slide-sections .swiper-button-next1::after,
+    .swiper-slide-sections .swiper-button-prev1::after,
+    .clinte-swiper-slide-section .swiper-button-next2::after,
+    .clinte-swiper-slide-section .swiper-button-prev2::after {
+        line-height: 0;
+    }
+    .why-slider .main-why-slider {
+        margin-top: 11rem;
+        height: 40.2rem;
+    }
+    #hero input {
+        width: 160px;
+        font-size: 16px;
+        height: 55.866943px;
     }
 }
 
 /* 1200-1365 (big tablet) */
 @media screen and (max-width: 1365px) {
+    .hero-data p,
+    #hero .explore-form select,
+    .hero-data p,
+    .main-title p,
+    .explore-data p,
+    .why-container p,
+    .Subcribe-container p,
+    .why-data p,
+    .our-data p,
+    .client-data p,
+    .client-star p,
+    .data-clinte p,
+    .traveller p,
+    .contact ul li a,
+    .quick ul li a,
+    .hero-data span {
+        font-size: 14px;
+    }
+    .Subcribe-container p ,
+    .our-data p {
+        line-height: 3.2rem;
+    }
+    .why-data p {
+        padding: 5px 0 18px 0;
+    }
+    #clientsay .clinte-swiper-slide-section {
+        right: 5.3rem;
+    }
+    header nav ul li a,
+    header .serch {
+        font-size: 14px;
+    }
+    header nav a {
+        padding: 28px 32px;
+    }
+    #main-header .logo img {
+        width: 24rem;
+    }
+    .traveller1 img {
+        width: 34rem;
+        height: 8rem;
+    }
+    .explore-data h4,
+    .why-data h4,
+    .data-clinte h4,
+    .contact h4,
+    .quick h4,
+    .follow h4 {
+        font-size: 24px;
+    }
+    .explore-data .explore-circle span {
+        font-size: 5.5rem;
+        line-height: 10rem;
+    }
+    .explore-data .explore-circle {
+        width: 7rem;
+        height: 7rem;
+    }
+    .main-why-slider .why-image img {
+        height: 8.2rem;
+        width: 8rem;
+    }
     .container {
         max-width: 95%;
     }
@@ -1012,28 +1137,21 @@ input::placeholder {
     .hero-data {
         top: 35%;
     }
-    header nav a {
-        padding: 23px 23px;
+    #hero .explore-form ,
+    #Subcribe .explore-form {
+        height: 60px;
+        width: 580px;
+    }
+    #Explore {
+        margin-top: 13.8rem;
     }
     .hero-data p {
-        font-size: 15px;
-        line-height: 32px;
-        color: #CFCFCF;
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
+        line-height: 30px;
     }
-    #hero .explore-form {
-        height: 65px;
-        width: 600px;
-        padding: 1rem 0.8rem 1rem 2.2rem;
-    }
-    #hero input {
-        height: 49.866943px;
-        width: 145px;
-        font-size: 15px;
-    }
-    #hero .explore-form select {
-        font-size: 15px;
+    #hero input , #Subcribe .Subcribe {
+        width: 140px;
+        font-size: 14px;
+        height: 46.866943px;
     }
     .main-title h2,
     .why-container h2,
@@ -1041,28 +1159,78 @@ input::placeholder {
     .Subcribe-container h2,
     .client-data h2 {
         font-size: 50px;
+        line-height: 60px;
+    }
+    .client-data h3 {
+        line-height: 53px;
+    }
+    .clinte-image img {
+        width: 12rem;
+    }
+    .main-title p ,
+    .hero-data p ,
+    .our-data p{
+        margin-top: 1.8rem;
+    }
+    #Subcribe {
+        margin-top: 12rem;
+    }
+    #why {
+        margin-top: 9rem;
+    }
+    #ourtor {
+        margin-top:7rem;
+    }
+    .our-logo img {
+        width: 11rem;
+    }
+    .client-data p {
+        line-height: 3rem;
+    }
+    .Subcribe-container h2 {
+        line-height: 60px;
+    }
+    #clientsay {
+        margin-top: 13rem;
     }
     .clinet-container {
-        margin-left: calc((100% - 110rem) / 2);
+        margin-left: calc((100% - 133rem) / 2);
+    }
+    input::placeholder {
+        font-size: 14px;
+    }
+    #Explore .swiper-button-next::after,
+    #Explore .swiper-button-prev::after,
+    #why .swiper-slide-sections .swiper-button-next1::after,
+    #why .swiper-slide-sections .swiper-button-prev1::after,
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2::after, 
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2::after {
+    font-size: 1.6rem;
+    }
+    #Explore .swiper-button-next,
+    #Explore .swiper-button-prev,
+    #why .swiper-slide-sections .swiper-button-prev1,
+    #why .swiper-slide-sections .swiper-button-next1,
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2,
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2 {
+        width: 5.8rem;
+        height: 5.9rem;
+    }
+    .swiper-slide-sections .swiper-button-next1::after,
+    .swiper-slide-sections .swiper-button-prev1::after,
+    .clinte-swiper-slide-section .swiper-button-next2::after,
+    .clinte-swiper-slide-section .swiper-button-prev2::after {
+        line-height: 0;
+    }
+    .why-slider .main-why-slider {
+        margin-top: 12rem;
+        height: 36.2rem;
     }
 }
 
 /* 992-1199 (big tablet) */
 @media screen and (max-width: 1199px) {
-    .container {
-        max-width: 95%;
-    }
-    .hero-data h1 {
-        font-size: 60px;
-        line-height: 77px;
-    }
-    .hero-data {
-        top: 32%;
-    }
-    .logo img {
-        width: 18rem;
-        height: 3.8rem;
-    }
+    
 }
 
 /* 768-991 (small tablet) */
