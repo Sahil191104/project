@@ -599,11 +599,13 @@ header .serch {
 }
 
 .clinet-container {
-    margin-left: calc((100% - 137rem) / 2);
+    margin-left: calc((100% - 145rem) / 2);
 }
 
 .client-data {
-    margin-bottom: 191px;
+    padding-bottom: 191px;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 .client-data h3 {
@@ -629,7 +631,7 @@ header .serch {
 }
 
 .clinte-slider .swiper-slide {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
     margin-left: 4rem;
     margin-right: 4rem;
 }
@@ -681,7 +683,7 @@ header .serch {
 #clientsay .clinte-swiper-slide-section {
     position: relative;
     float: right;
-    right: 11rem;
+    right: 26.5rem;
     bottom: 13.7rem;
 }
 
@@ -789,7 +791,7 @@ header .serch {
 }
 
 input::placeholder {
-    font-size: 20px;
+    font-size: 18px;
     padding: 1rem 1rem 1rem 1rem;
 }
 
@@ -957,6 +959,10 @@ input::placeholder {
     }
     header nav ul li a {
         font-size: 15px;
+        padding: 14px 27px;
+    }
+    header nav ul li ul {
+        top: 5.2rem;
     }
     .contact ul li i {
         font-size: 1.7rem;
@@ -969,6 +975,7 @@ input::placeholder {
     }
     #main-header .logo img {
         width: 21rem;
+        height: 4rem;
     }
     .traveller1 img {
         width: 34rem;
