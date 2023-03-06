@@ -123,7 +123,7 @@ header nav ul li ul li a {
 header nav ul li a {
     text-decoration: none;
     display: inline-block;
-    padding: 14px 27px;
+    padding: 20px 27px;
 }
 
 header nav ul li ul li a {
@@ -147,7 +147,7 @@ header nav ul li ul,
 header nav ul li ul li ul {
     display: inline-block;
     position: absolute;
-    top: 5rem;
+    top: 6.3rem;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
     display: none;
@@ -179,7 +179,7 @@ nav ul>i {
 }
 
 header nav ul li:hover>a i {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transition: all 0.8s;
 }
 
@@ -581,6 +581,8 @@ header .serch {
 .our-logo {
     padding: 0 60px;
     padding-top: 7rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -599,13 +601,14 @@ header .serch {
 }
 
 .clinet-container {
-    margin-left: calc((100% - 145rem) / 2);
+    margin-left: calc((100% - 141rem) / 2);
+    position: relative;
 }
 
 .client-data {
     padding-bottom: 191px;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    padding-left: 2rem;
+    /* margin-right: 4rem; */
 }
 
 .client-data h3 {
@@ -632,13 +635,13 @@ header .serch {
 
 .clinte-slider .swiper-slide {
     margin-bottom: 7rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .swiper-slide .main-clinte-slide {
     background: #FFFFFF;
-    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
 
@@ -683,7 +686,7 @@ header .serch {
 #clientsay .clinte-swiper-slide-section {
     position: relative;
     float: right;
-    right: 26.5rem;
+    right: 11.5rem;
     bottom: 13.7rem;
 }
 
@@ -869,13 +872,9 @@ input::placeholder {
 }
 
 .contact a:hover,
-.quick a:hover {
+.quick a:hover,
+.follow a:hover {
     color: burlywood;
-}
-
-.contact i:hover,
-.follow i:hover {
-    color: cadetblue;
 }
 
 .contact ul li i {
@@ -987,7 +986,7 @@ input::placeholder {
     .contact h4,
     .quick h4,
     .follow h4 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .explore-data .explore-circle span {
         font-size: 6.2rem;
@@ -1142,7 +1141,8 @@ input::placeholder {
         padding: 28px 32px;
     }
     #main-header .logo img {
-        width: 24rem;
+        width: 17rem;
+        height: 3.5rem;
     }
     .traveller1 img {
         width: 29.5rem;
@@ -1154,7 +1154,7 @@ input::placeholder {
     .contact h4,
     .quick h4,
     .follow h4 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .explore-data .explore-circle span {
         font-size: 5.5rem;
