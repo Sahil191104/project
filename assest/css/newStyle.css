@@ -360,9 +360,8 @@ header .serch {
 .explore-data .explore-circle span {
     font-weight: 400;
     font-size: 7.2rem;
-    line-height: 12.6rem;
     color: #000000;
-    margin-top: -5px;
+    margin-top: -3px;
     text-align: center;
     display: block;
 }
@@ -641,14 +640,14 @@ header .serch {
 
 .swiper-slide .main-clinte-slide {
     background: #FFFFFF;
-    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 34px rgb(0 0 0 / 10%);
     border-radius: 10px;
 }
 
 .clinte-image {
     margin-bottom: -6rem;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -671,7 +670,7 @@ header .serch {
 }
 
 .client-star p {
-    padding: 1.8rem 8rem 0rem 5.3rem;
+    padding: 1.8rem 8rem 2rem 5.3rem;
     padding-bottom: 5.1rem;
     font-weight: 500;
     font-size: 18px;
@@ -686,7 +685,7 @@ header .serch {
 #clientsay .clinte-swiper-slide-section {
     position: relative;
     float: right;
-    right: 11.5rem;
+    right: 3.5rem;
     bottom: 13.7rem;
 }
 
@@ -835,7 +834,7 @@ input::placeholder {
 .traveller p {
     font-weight: 500;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
     display: flex;
     align-items: center;
     color: #6C6C6C
@@ -864,7 +863,7 @@ input::placeholder {
 .contact ul li a {
     font-weight: 500;
     font-size: 18px;
-    line-height: 34px;
+    line-height: 38px;
     display: flex;
     align-items: center;
     color: #6C6C6C;
@@ -885,7 +884,7 @@ input::placeholder {
 .quick h4 {
     font-weight: 600;
     font-size: 24px;
-    line-height: 70px;
+    line-height: 75px;
     display: flex;
     align-items: center;
     color: #000000;
@@ -953,7 +952,9 @@ input::placeholder {
     .traveller p,
     .contact ul li a,
     .quick ul li a,
-    .hero-data span {
+    .hero-data span,
+    .why-data a,
+    .copyright p {
         font-size: 16px;
     }
     header nav ul li ul {
@@ -972,9 +973,9 @@ input::placeholder {
     .follow a {
         font-size: 2.2rem;
     }
-    #clientsay .clinte-swiper-slide-section {
-        right: 5.3rem;
-    }
+    /* #clientsay .clinte-swiper-slide-section {
+        right: 7rem;
+    } */
     #main-header .logo img {
         width: 20rem;
         height: 4rem;
@@ -982,6 +983,13 @@ input::placeholder {
     .traveller1 img {
         width: 34rem;
         height: 8rem;
+    }
+    .traveller p {
+        line-height: 26px;
+    }
+    .contact ul li a,
+    .quick ul li a {
+        line-height: 36px;
     }
     .explore-data h4,
     .why-data h4,
@@ -1003,8 +1011,11 @@ input::placeholder {
         height: 8.7rem;
         width: 8.5rem;
     }
+    .explore-slider .explore-img {
+        height: 35.5rem;
+    }
     .container {
-        max-width: 137rem;
+        max-width: 134rem;
     }
     .hero-data h1 {
         font-size: 80px;
@@ -1031,6 +1042,9 @@ input::placeholder {
         font-size: 55px;
         line-height: 66px;
     }
+    .why-data p {
+        line-height: 25px;
+    }
     .client-data h3 {
         line-height: 53px;
     }
@@ -1039,8 +1053,10 @@ input::placeholder {
     }
     .main-title p ,
     .hero-data p ,
-    .our-data p{
+    .our-data p,
+    .Subcribe-container p{
         margin-top: 2rem;
+        line-height: 30px;
     }
     #Subcribe {
         margin-top: 12rem;
@@ -1061,7 +1077,14 @@ input::placeholder {
         margin-top: 15.9rem;
     }
     .clinet-container {
-        margin-left: calc((100% - 137rem) / 2);
+        margin-left: calc((100% - 134rem) / 2);
+    }
+    .client-star p {
+        padding: 1.5rem 6rem 4rem 5rem;
+    }
+    .client-star img {
+        margin-top: 6rem;
+        margin-left: 5rem;
     }
     input::placeholder {
         font-size: 16px;
@@ -1072,7 +1095,7 @@ input::placeholder {
     #why .swiper-slide-sections .swiper-button-prev1::after,
     #clientsay .clinte-swiper-slide-section .swiper-button-next2::after, 
     #clientsay .clinte-swiper-slide-section .swiper-button-prev2::after {
-    font-size: 1.8rem;
+        font-size: 1.8rem;
     }
     #Explore .swiper-button-next,
     #Explore .swiper-button-prev,
@@ -1117,12 +1140,14 @@ input::placeholder {
     .traveller p,
     .contact ul li a,
     .quick ul li a,
-    .hero-data span {
+    .hero-data span,
+    .why-data a,
+    .copyright p {
         font-size: 14px;
     }
     header nav ul li a {
         font-size: 14px;
-        padding: 20px 27px;
+        padding: 20px 18px;
     }
     header nav ul li ul {
         top: 6.1rem;
@@ -1130,12 +1155,15 @@ input::placeholder {
     header nav ul li ul li ul {
         top: 0rem;
     }
-    .Subcribe-container p ,
+    .Subcribe-container p,
     .our-data p {
-        line-height: 3.2rem;
+        line-height: 2.8rem;
+    }
+    .our-logo {
+        padding-top: 10rem;
     }
     .contact ul li i {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .follow a {
         font-size: 1.9rem;
@@ -1143,9 +1171,9 @@ input::placeholder {
     .why-data p {
         padding: 5px 0 18px 0;
     }
-    #clientsay .clinte-swiper-slide-section {
-        right: 5.3rem;
-    }
+    /* #clientsay .clinte-swiper-slide-section {
+        right: 4.8rem;
+    } */
     header .serch {
         font-size: 14px;
     }
@@ -1160,6 +1188,18 @@ input::placeholder {
         width: 29.5rem;
         height: 7.2rem;
     }
+    .traveller p {
+        line-height: 25px;
+    }
+    .contact ul li a,
+    .quick ul li a {
+        line-height: 35px;
+    }
+    .our-logo {
+        padding-top: 7rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
     .explore-data h4,
     .why-data h4,
     .data-clinte h4,
@@ -1169,16 +1209,20 @@ input::placeholder {
         font-size: 22px;
     }
     .explore-data .explore-circle span {
-        font-size: 5.5rem;
+        font-size: 5rem;
         line-height: 10rem;
     }
     .explore-data .explore-circle {
-        width: 7rem;
-        height: 7rem;
+        top: -5rem;
+        width: 6.7rem;
+        height: 6.7rem;
     }
     .main-why-slider .why-image img {
-        height: 8.2rem;
-        width: 8rem;
+        height: 7.9rem;
+        width: 7.8rem;
+    }
+    .explore-slider .explore-img {
+        height: 35rem;
     }
     .container {
         max-width: 95%;
@@ -1218,7 +1262,7 @@ input::placeholder {
         line-height: 53px;
     }
     .clinte-image img {
-        width: 12rem;
+        width: 10rem;
     }
     .main-title p ,
     .hero-data p ,
@@ -1249,6 +1293,13 @@ input::placeholder {
     .clinet-container {
         margin-left: calc((100% - 95%) / 2);
     }
+    .client-star p {
+        padding: 1.5rem 5rem 3.5rem 5rem;
+    }
+    .client-star img {
+        margin-top: 6rem;
+        margin-left: 5rem;
+    }
     input::placeholder {
         font-size: 14px;
     }
@@ -1266,8 +1317,8 @@ input::placeholder {
     #why .swiper-slide-sections .swiper-button-next1,
     #clientsay .clinte-swiper-slide-section .swiper-button-prev2,
     #clientsay .clinte-swiper-slide-section .swiper-button-next2 {
-        width: 5.8rem;
-        height: 5.9rem;
+        width: 5.5rem;
+        height: 5.6rem;
     }
     .swiper-slide-sections .swiper-button-next1::after,
     .swiper-slide-sections .swiper-button-prev1::after,
@@ -1275,9 +1326,20 @@ input::placeholder {
     .clinte-swiper-slide-section .swiper-button-prev2::after {
         line-height: 0;
     }
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2,
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2,
+    #why .swiper-slide-sections .swiper-button-prev1 ,
+    #why .swiper-slide-sections .swiper-button-next1 {
+        padding: 2.3rem;
+    }
     .why-slider .main-why-slider {
         margin-top: 12rem;
         height: 36.2rem;
+    }
+    .why-slider .main-why-slider {
+        margin: 0 55px 0 55px;
+        margin-bottom: 5rem;
+        margin-top: 11rem;
     }
 }
 
