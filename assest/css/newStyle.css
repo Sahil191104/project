@@ -634,13 +634,13 @@ header .serch {
 
 .clinte-slider .swiper-slide {
     margin-bottom: 7rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .swiper-slide .main-clinte-slide {
     background: #FFFFFF;
-    box-shadow: 0px 20px 34px rgb(0 0 0 / 10%);
+    box-shadow: 0px 20px 60px rgb(0 0 0 / 10%);
     border-radius: 10px;
 }
 
@@ -1273,7 +1273,7 @@ input::placeholder {
         margin-top: 12rem;
     }
     #why {
-        margin-top: 9rem;
+        margin-top: 8rem;
     }
     #ourtor {
         margin-top:7rem;
@@ -1345,12 +1345,178 @@ input::placeholder {
 
 /* 992-1199 (big tablet) */
 @media screen and (max-width: 1199px) {
-    
+    nav>ul {
+        position: absolute;
+        top: 0;
+        right: -60%;
+        background-color: rgb(120, 167, 153);
+        width: 60%;
+        height: 100vh;
+        transition: all 1s;
+    }
+    header nav ul li {
+        display: block;
+    }
+    header nav ul li ul,
+    header nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li a:hover {
+        width: 100%;
+    }
+    header nav ul li ul li>a {
+        padding-left: 50px;
+    }
+    header nav ul li ul li ul li>a {
+        padding-left: 60px;
+    }
+    nav ul > i {
+        float: right;
+        padding: 1.5rem 4rem 1.5rem 53.4rem;
+        color: #FFF;
+        font-size: 28px;
+        z-index: 999;
+        position: relative;
+        display: inline-block !important;
+        border: 2px solid rgb(85, 116, 106);
+    }
+    nav>i {
+        padding: 20px 0px 20px 0px;
+        color: #fff;
+        font-size: 18px;
+        display: inline-block !important;
+    }
+    .showHide {
+        right: 0;
+    }
+    .container {
+        max-width: 95%;
+    }
+    #Explore {
+        margin-top: 11.8rem;
+    }
+    #Subcribe {
+        margin-top: 9rem;
+    }
+    .hero-data h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .client-data {
+        padding-bottom: 170px;
+    }
+    .main-title h2,
+    .why-container h2,
+    .our-data h1,
+    .Subcribe-container h2,
+    .client-data h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .client-data h3 {
+        line-height: 42px;
+    }
+    .explore-data h4,
+    .why-data h4,
+    .data-clinte h4,
+    .contact h4,
+    .quick h4,
+    .follow h4 {
+        font-size: 20px;
+    }
+    .why-slider .main-why-slider {
+        margin: 0 70px 0 70px;
+        margin-bottom: 5rem;
+        margin-top: 11rem;
+    }
+    #why {
+        margin-top: 7rem;
+    }
+    .traveller1 img {
+        width: 27.5rem;
+        height: 6.2rem;
+    }
+    .our-logo {
+        padding-top: 7rem;
+        padding-left: 6.6rem;
+        padding-right: 6.6rem;
+    }
+    .main-title p {
+        margin-bottom: -6px;
+    }
+    .clinet-container {
+        margin-left: calc((100% - 95%) / 2);
+    }
+    #clientsay .clinte-swiper-slide-section {
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        top: 213px;
+        right: 42.1%;
+    }
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2 {
+        right: 10.5rem;
+    }
+    #Explore .swiper-button-next,
+    #Explore .swiper-button-prev,
+    #why .swiper-slide-sections .swiper-button-prev1,
+    #why .swiper-slide-sections .swiper-button-next1,
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2,
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2 {
+        width: 5rem;
+        height: 5rem;
+    }
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2,
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2,
+    #why .swiper-slide-sections .swiper-button-prev1 ,
+    #why .swiper-slide-sections .swiper-button-next1 {
+        padding: 2rem;
+    }
+    .swiper-slide-sections .swiper-button-next1::after,
+    .swiper-slide-sections .swiper-button-prev1::after,
+    .clinte-swiper-slide-section .swiper-button-next2::after,
+    .clinte-swiper-slide-section .swiper-button-prev2::after {
+        line-height: 0;
+    }
 }
 
 /* 768-991 (small tablet) */
 @media screen and (max-width: 991px) {
-
+    .container {
+        max-width: 95%;
+    }
+    .clinet-container {
+        margin-left: calc((100% - 95%) / 2);
+    }
+    nav ul > i {
+        padding: 1.5rem 4rem 1.5rem 40rem;
+    }
+    .hero-data p,
+    #hero .explore-form select,
+    .hero-data p,
+    .main-title p,
+    .explore-data p,
+    .why-container p,
+    .Subcribe-container p,
+    .why-data p,
+    .our-data p,
+    .client-data p,
+    .client-star p,
+    .data-clinte p,
+    .traveller p,
+    .contact ul li a,
+    .quick ul li a,
+    .hero-data span,
+    .why-data a,
+    .copyright p {
+        font-size: 12px;
+    }
+    .hero-data p {
+        line-height: 20px;
+    }
 }
 
 /* 575-767 (Mobile landscape) */
