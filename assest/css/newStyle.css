@@ -960,6 +960,9 @@ input::placeholder {
     #why {
         background-size: 100% 50rem;
     }
+    .client-data {
+        padding-bottom: 185px;
+    }
     .hero-data p,
     #hero .explore-form select,
     .hero-data p,
@@ -1189,6 +1192,9 @@ input::placeholder {
     .copyright p {
         font-size: 14px;
     }
+    .client-data {
+        padding-bottom: 180px;
+    }
     header nav ul li a {
         font-size: 14px;
         padding: 20px 18px;
@@ -1229,6 +1235,9 @@ input::placeholder {
     }
     .follow a {
         font-size: 1.9rem;
+    }
+    .why-data h4 {
+        padding-top: 26px;
     }
     .why-data p {
         padding: 5px 0 18px 0;
@@ -1422,6 +1431,9 @@ input::placeholder {
     header nav ul li {
         display: block;
     }
+    input::placeholder {
+        font-size: 12px;
+    }
     header nav ul li ul,
     header nav ul li ul li ul {
         position: relative;
@@ -1440,13 +1452,12 @@ input::placeholder {
     }
     nav ul > i {
         float: right;
-        padding: 1.5rem 2rem 1.5rem 2rem;
+        padding: 1.5rem 2rem 1.5rem 55.5rem;
         color: #FFF;
         font-size: 28px;
         z-index: 999;
         position: relative;
         display: inline-block !important;
-        border: 2px solid rgb(85, 116, 106);
     }
     nav>i {
         padding: 18px;
@@ -1459,6 +1470,9 @@ input::placeholder {
     }
     .container {
         max-width: 95%;
+    }
+    #clientsay {
+        margin-top: 11rem;
     }
     #Explore {
         margin-top: 11.8rem;
@@ -1486,7 +1500,7 @@ input::placeholder {
         line-height: 80px;
     }
     .client-data {
-        padding-bottom: 170px;
+        padding-bottom: 165px;
     }
     #top {
         margin: -3rem 0 5rem 0;
@@ -1509,6 +1523,9 @@ input::placeholder {
     .quick h4,
     .follow h4 {
         font-size: 20px;
+    }
+    .why-data h4 {
+        padding-top: 24px;
     }
     .why-slider .main-why-slider {
         margin: 0 70px 0 70px;
@@ -1572,6 +1589,9 @@ input::placeholder {
     #why {
         background-size: 100% 45rem;
     }
+    input::placeholder {
+        font-size: 12px;
+    }
     .container {
         max-width: 95%;
     }
@@ -1579,7 +1599,7 @@ input::placeholder {
         margin-left: calc((100% - 95%) / 2);
     }
     nav ul > i {
-        padding: 1rem 2rem 1rem 2rem;
+        padding: 1rem 2rem 1rem 35rem;
     }
     .traveller1 img {
         width: 25rem;
@@ -1607,8 +1627,14 @@ input::placeholder {
     .traveller p {
         line-height: 24px;
     }
+    #clientsay {
+        margin-top: 10rem;
+    }
     #top {
         margin: -4rem 0 4rem 0;
+    }
+    .client-data {
+        padding-bottom: 160px;
     }
     .explore-slider .swiper-slide:hover .explore-img img {
         height: 25.6rem;
@@ -1684,6 +1710,9 @@ input::placeholder {
     #why {
         margin-top: 6rem;
     }
+    .why-data h4 {
+        padding-top: 22px;
+    }
     .explore-data h4, 
     .why-data h4, .data-clinte h4, 
     .contact h4, 
@@ -1750,11 +1779,127 @@ input::placeholder {
 
 /* 575-767 (Mobile landscape) */
 @media screen and (max-width: 767px) {
+    #why {
+        background-size: 100% 43rem;
+    }
     .container {
         max-width: 95%;
     }
     .clinet-container {
         margin-left: calc((100% - 95%) / 2);
+    }
+    header nav ul li a {
+        padding: 15px 27px;
+    }
+    header nav ul li ul li a {
+        padding:10px 40px;
+    }
+    nav ul > i {
+        padding: 1rem 2rem 1rem 30.4rem;
+    }
+    nav>i {
+        padding: 10px;
+    }
+    .hero-data h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+    #hero .explore-form, 
+    #Subcribe .explore-form {
+        height: 45px;
+        width: 380px;
+    }
+    #hero input, #Subcribe .Subcribe {
+        width: 90px;
+        font-size: 12px;
+        height: 34.866943px;
+    }
+    #Explore {
+        margin-top: 8.8rem;
+    }
+    .main-title p {
+        margin-bottom: 10px;
+    }
+    .main-title h2, 
+    .why-container h2, 
+    .our-data h1, 
+    .Subcribe-container h2, 
+    .client-data h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    #Explore .swiper-button-next,
+    #Explore .swiper-button-prev,
+    #why .swiper-slide-sections .swiper-button-prev1, 
+    #why .swiper-slide-sections .swiper-button-next1,
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2, 
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2 {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    #Explore .swiper-button-next::after, 
+    #Explore .swiper-button-prev::after, 
+    #why .swiper-slide-sections .swiper-button-next1::after, 
+    #why .swiper-slide-sections .swiper-button-prev1::after, 
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2::after, 
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2::after {
+        font-size: 1.3rem;
+    }
+    #clientsay .clinte-swiper-slide-section .swiper-button-next2, 
+    #clientsay .clinte-swiper-slide-section .swiper-button-prev2, 
+    #why .swiper-slide-sections .swiper-button-prev1, 
+    #why .swiper-slide-sections .swiper-button-next1 {
+        padding: 1.7rem;
+    }
+    #why {
+        margin-top: 5rem;
+    }
+    .main-why-slider .why-image img {
+        height: 7rem;
+        width: 7rem;
+    }
+    .explore-data h4, 
+    .why-data h4, 
+    .data-clinte h4, 
+    .contact h4, 
+    .quick h4, 
+    .follow h4 {
+        font-size: 18px;
+    }
+    .why-data h4 {
+        padding-top: 20px;
+    }
+    .why-slider .main-why-slider {
+        margin: 9rem 6rem 5rem 6rem;
+    }
+    #ourtor {
+        margin-top: 4rem;
+    }
+    #clientsay {
+        margin-top: 9rem;
+    }
+    #clientsay .clinte-swiper-slide-section {
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        top: 190px;
+        right: 36.5%;
+    }
+    .client-data {
+        padding-bottom: 150px;
+    }
+    #Subcribe {
+        margin-top: 5rem;
+    }
+    .traveller1 img {
+        width: 20rem;
+        height: 4.5rem;
+    }
+    .explore-Subcribe {
+        padding: 4rem 0 8rem 0;
     }
 }
 
