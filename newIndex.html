@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traveller</title>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assest/css/reset.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <script src="./assest/js/modernizr.js"></script>
     <link rel="stylesheet" href="./assest/css/all.css">
     <link rel="stylesheet" href="./assest/css/font.css">
     <link rel="stylesheet" href="./assest/css/newStyle.css">
     <style>
-        .fixedtop{
+        .fixedtop {
             position: fixed;
             background-color: black;
         }
@@ -78,7 +82,14 @@
         <section id="hero">
             <div class="container">
                 <div class="hero-data">
-                    <h1>Make in <br>your journey.</h1>
+                    <h1 class="cd-headline letters scale hero-data-h1">
+                        <span>Make in your </span> 
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">journey</b>
+                            <b>sushi</b>
+                            <b>steak</b>
+                        </span>
+                    </h1>
                     <p>Explore the world with what you love beautiful<br>natural beauty.</p>
                     <div class="explore">
                         <form action="" class="explore-form">
@@ -495,6 +506,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./assest/js/main.js"></script>
+
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+        new kursor({
+            type: 2,
+            color: 'rgb(130, 181, 162)'
+        })
+    </script>
 
     <script>
         $(document).ready(function () {
