@@ -19,10 +19,36 @@
             position: fixed;
             background-color: black;
         }
+        .top {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            bottom: 0;
+            right: 0;
+            margin: 20px;
+            position: fixed;
+            background-color: rgb(130, 181, 162);
+            display: none;
+            cursor: pointer;
+            text-align: center;
+            z-index: 9;
+        }
+        .top i {
+            padding: 19px;
+            font-size: 20px;
+            color: #fff;
+        }
+        .show {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
+    <div class="top">
+        <i class="fa-solid fa-angles-up"></i>
+    </div>
+
     <header id="main-header">
         <div class="container">
             <a href="#" class="logo">
@@ -80,41 +106,42 @@
     <main>
         <!-- 1 -->
         <section id="hero">
-            <div class="container">
-                <div class="hero-data">
-                    <h1 class="cd-headline letters scale hero-data-h1">
-                        <span>Make in your </span> 
-                        <span class="cd-words-wrapper">
-                            <b class="is-visible">journey</b>
-                            <b>sushi</b>
-                            <b>steak</b>
-                        </span>
-                    </h1>
-                    <p>Explore the world with what you love beautiful<br>natural beauty.</p>
-                    <div class="explore">
-                        <form action="" class="explore-form">
-                            <select name="Location">
-                                <option value="0">Location</option>
-                                <option value="surat">surat</option>
-                                <option value="vapi">vapi</option>
-                                <option value="baroda">baroda</option>
-                            </select>
-                            <select name="Date">
-                                <option value="0">Date</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <select name="People">
-                                <option value="0">People</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <input type="button" value="Explore now">
-                        </form>
+            <div id="particles-js">
+                <div class="container">
+                    <div class="hero-data">
+                        <h1 class="cd-headline letters scale hero-data-h1">
+                            <span>Make in your </span>
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">journey</b>
+                                <b>Goa</b>
+                            </span>
+                        </h1>
+                        <p>Explore the world with what you love beautiful<br>natural beauty.</p>
+                        <div class="explore">
+                            <form action="" class="explore-form">
+                                <select name="Location">
+                                    <option value="0">Location</option>
+                                    <option value="surat">surat</option>
+                                    <option value="vapi">vapi</option>
+                                    <option value="baroda">baroda</option>
+                                </select>
+                                <select name="Date">
+                                    <option value="0">Date</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <select name="People">
+                                    <option value="0">People</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <input type="button" value="Explore now">
+                            </form>
+                        </div>
+                        <p><span>Popular Place :</span> Bali, Istanbul, Rome, Paris.</p>
                     </div>
-                    <p><span>Popular Place :</span> Bali, Istanbul, Rome, Paris.</p>
                 </div>
             </div>
         </section>
@@ -507,6 +534,28 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="./assest/js/main.js"></script>
+    <script src="./assest/js/particles.min.js"></script>
+    <script src="./assest/js/app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                console.log($(window).scrollTop());
+    
+                if ($(window).scrollTop() > 100) {
+                        $(".top").addClass("show")
+                } else {
+                        $(".top").removeClass("show")
+                }
+            })
+
+            $(".top").click(function() {
+                $("html, body").animate({
+                    scrollTop:0
+                })
+            })
+        });
+    </script>
 
     <script src="https://unpkg.com/kursor"></script>
     <script>

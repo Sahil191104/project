@@ -141,6 +141,7 @@ header nav ul li {
 header nav ul li a:hover {
     background-color: rgb(130, 181, 162);
     color: #FFF;
+    color: c;
     transition: all 1.3s;
 }
 
@@ -211,6 +212,11 @@ header .serch {
     background-size: cover;
     position: relative;
     margin-bottom: 3.8rem;
+}
+
+#particles-js canvas{
+    position: absolute;
+    top: 0;
 }
 
 #hero::before {
